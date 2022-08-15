@@ -1,0 +1,133 @@
+*,*::before,*::after{ box-sizing: inherit;};
+html{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  height: 100vh;
+  background: #90ee90  ;/*C4A484 013220*/
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App{
+  margin-top: 2rem;
+  /*background: linear-gradient(papayawhip, white);*/
+  background: papayawhip;
+  color: black;
+  width: 315px;
+  height:560px;
+  overflow: auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 1px gray;
+}
+
+.toggle-dark{
+  margin: .5rem 0 0 .5rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background: black;
+  height: 25px;
+}
+.toggle-dark:hover{
+  box-shadow: 0px 0px 10px 1px gray;
+  cursor: pointer;
+}
+.toggle-dark:active{
+  transform: scale(.95);
+}
+
+.input-container{
+  display: flex;
+  justify-content: center;
+  margin-top: .5rem;
+  width: 90%;
+}
+.input-container input{
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 40px;
+  margin-right: .5rem;
+}
+.input-container button{
+  height: 35px;
+  margin-top: .5rem;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 80px;
+}
+.input-container button:active{
+  transform: scale(.95);
+}
+
+.input-container button:hover{
+  box-shadow: 0px 0px 10px 1px gray;
+  cursor: pointer;
+}
+
+
+.main-container{
+  margin: .5rem;
+}
+
+
+.main-info p{
+  font-size: 1.2em;
+}
+
+.main-info img{
+  width: 100px;
+  position: absolute;
+  margin-left: .5rem;
+  border-radius: 3px;
+}
+
+.btn-container{
+  display: flex;
+  justify-content: space-around;
+}
+.btn-container button{
+  border: 2px #013220 solid;
+  height: 40px;
+  color: black;
+  background: #90ee90;
+  font-size: 1.1em;
+  border-radius: 5px;
+}
+.btn-container button:active{
+  transform: scale(.95);
+}
+.btn-container button:hover{
+  box-shadow: 0px 0px 10px 1px gray;
+  cursor: pointer;
+}
+
+.empty{
+  margin: .2rem;
+}
+
+/* dark mode */
+
+.dark{
+  background: black;
+  color: white;
+}
+
+.dark button,
+.dark img{
+  outline: 2px silver solid;
+}
